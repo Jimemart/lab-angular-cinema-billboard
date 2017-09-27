@@ -17,7 +17,7 @@ interface Movie {
 
 
 @Injectable()
-export class CounterService {
+export class CinemaService {
   moviesArr:Array<Movie> = [
     {
       id: 1,

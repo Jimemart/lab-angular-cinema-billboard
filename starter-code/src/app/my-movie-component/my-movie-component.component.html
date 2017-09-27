@@ -1,0 +1,10 @@
+<h2>{{movieToShow.title}}</h2>
+<img [src]="movieToShow.poster" height="500">
+<p>{{movieToShow.director}}</p>
+<ul>
+  <li *ngFor="let actor of movieToShow.actors">
+    {{actor}}
+  </li>
+</ul>
+<p>{{movieToShow.synopsis}}</p>
+<button (click)="goHome()">Home</button>
