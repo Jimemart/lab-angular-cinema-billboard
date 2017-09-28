@@ -18,7 +18,8 @@ export class MyMovieComponentComponent implements OnInit {
     this.route.params
         .subscribe((params)=>this.movieId = params['id'])
 
-  this.movieToShow = this.myMovies[this.movieId-1 ]
+
+  this.movieToShow =this.service.getMovie(this.movieId-1 )
   console.log(this.movieToShow)
   }
 
